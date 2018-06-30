@@ -11,9 +11,19 @@ inputs:
   ksize:
     type: string[]?
     inputBinding:
-      position: 7
+      position: 1
       prefix: "--ksize"
       itemSeparator: ","
+  scaled:
+    type: int?
+    inputBinding:
+      position: 2
+      prefix: "--scaled"
+  num_hashes:
+    type: int?
+    inputBinding:
+      position: 3
+      prefix: "-n"
 outputs:
   signature:
     type: File

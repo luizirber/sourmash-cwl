@@ -1,0 +1,4 @@
+filename:
+  class: File
+  path: test.fa
+num_hashes: 1000
