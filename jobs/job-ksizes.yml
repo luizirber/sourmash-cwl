@@ -1,4 +1,4 @@
-filename:
-  class: File
-  path: test.fa
+sequences:
+  - class: File
+    path: test.fa
 ksize: ["21","31"]

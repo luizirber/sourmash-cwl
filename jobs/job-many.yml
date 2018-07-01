@@ -1,0 +1,5 @@
+sequences:
+  - class: File
+    path: "test.fa"
+  - class: File
+    path: "test.fa"

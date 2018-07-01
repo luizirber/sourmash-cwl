@@ -1,5 +1,5 @@
-all: run_plain run_ksizes run_scaled run_num-hashes
+all: run_plain run_ksizes run_scaled run_num_hashes run_many
 
-run_%: sourmash.cwl jobs/job-%.yml
+run_%: sourmash-compute.cwl jobs/job-%.yml
 	cwl-runner $^
 	rm test.fa.sig
