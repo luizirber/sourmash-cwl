@@ -9,6 +9,7 @@ cwl-runner = "*"
 html5lib = "*"
 
 [dev-packages]
+tox = "*"
 
 [requires]
 python_version = "3.6"
