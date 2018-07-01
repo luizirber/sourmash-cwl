@@ -7,6 +7,10 @@ baseCommand: ['sourmash', 'compute']
 requirements:
   - class: InlineJavascriptRequirement
 
+hints:
+  - class: DockerRequirement
+    dockerPull: "quay.io/luizirber/sourmash-cwl:latest"
+
 inputs:
   sequences:
     type: File[]
