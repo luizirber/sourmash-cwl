@@ -14,6 +14,7 @@ hints:
 inputs:
   sequences:
     type: File[]
+    streamable: true
     inputBinding: {}
 #    format:
 #      - edam:format_1929  # FASTA
@@ -37,6 +38,7 @@ inputs:
       prefix: "--merge"
   output:
     type: File?
+    streamable: true
     inputBinding:
       prefix: "-o"
 
@@ -101,6 +103,7 @@ inputs:
 outputs:
   signature:
     type: File
+    streamable: true
     outputBinding:
       glob: $(inputs.output || inputs.sequences[0].basename).sig
 
